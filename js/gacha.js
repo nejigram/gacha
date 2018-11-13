@@ -20,11 +20,7 @@ $(function(){
         });
     });
     $("[id^=returnbtn_]").on(click,function(){
-        height_check();
-        $("[id^=gacha]").show();
-        $("[id^=area_]").hide();
-
-
+        location.reload();
     });
 
     $(".kurubox").on(click,function(){
