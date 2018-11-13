@@ -17,33 +17,36 @@
     <p class="tc fs_2"><img src="https://www.nejigram.com/assets/img/stamp/023.png" class="buruburu w8"><span class="buruburu">gacha.</span><img src="https://www.nejigram.com/assets/img/stamp/024.png" class="buruburu w8"></p>
     <p class="tc fs_0_7 lh_1 ja">ガチャ。</p>
 </header>
-<p id="test"></p>
+
 <article class="box m0a pd_1 mt_1">
 
-    <p class="tc mt_4" id="gachabtn"><button class="btn" id="gacha1">gacha!</button></p>
+    <p class="tc mt_4"><button class="btn" id="gacha1">gacha!</button></p>
 
-    <div id="area_gacha1" class="">
-        <div class="kurubox mt_2">
-            <div class="omote pikapika fbox" style="align-Items:center;">
-                <img src="https://www.nejigram.com/assets/img/stamp/top.png" width="100%" class="gs">
+    <div id="area_gacha1" class="no_disp">
+        <div class="kurubox mt_2 m0a">
+            <div class="omote pikapika tc">
+                <img src="https://www.nejigram.com/assets/img/stamp/top.png" width="80%" class="gs">
 
             </div>
-            <div class="ura">
-                <img src="https://www.nejigram.com/assets/img/stamp/023.png" width="100%">
+            <div class="ura tc">
+                <img src="https://www.nejigram.com/assets/img/stamp/023.png" width="80%">
             </div>
         </div>
+
         <p class="tc mt_2"><button class="btn" id="returnbtn_gacha1">return</button></p>
     </div>
 
-    <p class="tc mt_4" id="gachabtn"><button class="btn" id="gacha10">10連gacha!</button></p>
-    <div id="area_gacha10" class="">
+    <p class="tc mt_4"><button class="btn" id="gacha10">10連gacha!</button></p>
+    <div id="area_gacha10" class="no_disp">
         <div class="fbox">
             <?php for($x = 0;$x < 10;$x++) : ?>
-            <div class="kurubox mt_1">
-                <div class="omote">
+            <div class="kurubox mt_2">
+                <div class="omote pikapika tc">
+                    <img src="https://www.nejigram.com/assets/img/stamp/top.png" width="80%" class="gs">
+
                 </div>
-                <div class="ura">
-                    <img src="https://www.nejigram.com/assets/img/stamp/023.png" width="100%">
+                <div class="ura tc">
+                    <img src="https://www.nejigram.com/assets/img/stamp/023.png" width="80%">
                 </div>
             </div>
             <?php endfor;?>
