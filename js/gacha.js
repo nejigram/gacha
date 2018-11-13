@@ -10,9 +10,19 @@ $(function(){
     $("[id^=gacha]").on(click,function(){
         var id = $(this).attr("id");
         $("#area_" + id).find(".ura").each(function(i,elm){
-            var imgno = str_zero(random_int(1,40),3);
-            $(elm).children("img").attr("src","https://www.nejigram.com/assets/img/stamp/"+imgno+".png");
-            $(elm).prev().addClass("pikapika2");
+
+            if(random_int(1,100) == 77){
+//            if(77 == 77){
+
+                $(elm).children("img").attr("src","https://www.nejigram.com/assets/img/stamp/ssr040.png");
+                $(elm).prepend('<p class="mt_1 fs_1_2">\\ SSR /</p>');
+                $(elm).prev().addClass("pikapika");
+
+            }else{
+                var imgno = str_zero(random_int(1,39),3);
+                $(elm).children("img").attr("src","https://www.nejigram.com/assets/img/stamp/"+imgno+".png");
+                $(elm).prev().addClass("pikapika2");
+            }
         });
 
         $("#area_" + id).show();
