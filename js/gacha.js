@@ -1,7 +1,7 @@
 $(function(){
     var click = window.ontouchstart===null?"touchstart":"click";
     var card_open_scd = 500;
-//    var data;
+
     var tmp_card_open_scd = 0;
     $(window).on('load resize',function(){
         height_check();
@@ -9,6 +9,12 @@ $(function(){
     });
     $("[id^=gacha]").on(click,function(){
         var id = $(this).attr("id");
+        $("#area_" + id).find(".ura").each(function(i,elm){
+            var imgno = str_zero(random_int(1,40),3);
+            $(elm).children("img").attr("src","https://www.nejigram.com/assets/img/stamp/"+imgno+".png");
+            $(elm).prev().addClass("pikapika2");
+        });
+
         $("#area_" + id).show();
         height_check();
         $("[id^=gacha]").hide();
@@ -42,3 +48,10 @@ $(function(){
 
     }
 });
+function random_int(min,max) {
+    return Math.floor( Math.random() * (max + 1 - min) ) + min ;
+
+}
+function str_zero(num,length){
+    return ('0000000000' + num).slice(-length);
+}
