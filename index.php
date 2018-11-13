@@ -21,16 +21,30 @@
 <article class="box m0a pd_1 mt_1">
 
     <p class="tc mt_4" id="gachabtn"><button class="btn" id="gacha1">gacha!</button></p>
-    <div id="area_gacha1" class="no_disp">
-        <div class="card">
+
+    <div id="area_gacha1" class="">
+        <div class="kurubox mt_2">
+            <div class="omote pikapika fbox" style="align-Items:center;">
+                <img src="https://www.nejigram.com/assets/img/stamp/top.png" width="100%" class="gs">
+
+            </div>
+            <div class="ura">
+                <img src="https://www.nejigram.com/assets/img/stamp/023.png" width="100%">
+            </div>
         </div>
-        <p class="tc mt_1"><button class="btn" id="returnbtn_gacha1">return</button></p>
+        <p class="tc mt_2"><button class="btn" id="returnbtn_gacha1">return</button></p>
     </div>
+
     <p class="tc mt_4" id="gachabtn"><button class="btn" id="gacha10">10連gacha!</button></p>
-    <div id="area_gacha10" class="no_disp">
+    <div id="area_gacha10" class="">
         <div class="fbox">
             <?php for($x = 0;$x < 10;$x++) : ?>
-            <div class="card">
+            <div class="kurubox mt_1">
+                <div class="omote">
+                </div>
+                <div class="ura">
+                    <img src="https://www.nejigram.com/assets/img/stamp/023.png" width="100%">
+                </div>
             </div>
             <?php endfor;?>
         </div>
