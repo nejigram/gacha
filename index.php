@@ -38,20 +38,21 @@
 
     <p class="tc mt_4"><button class="btn" id="gacha10">10連gacha!</button></p>
     <div id="area_gacha10" class="no_disp">
+        <div class="fbox">
         <?php for($x = 0;$x < 10;$x++) : ?>
-            <?php if(!$x || $x % 5 === 0) :?><div class="fbox"><?php endif;?>
-            <div class="kurubox mt_2">
-                <div class="omote pikapika tc">
-                    <img src="https://www.nejigram.com/assets/img/stamp/top.png" width="80%" class="gs">
+            <div class="fitem">
+                <div class="kurubox mt_2">
+                    <div class="omote pikapika tc">
+                        <img src="https://www.nejigram.com/assets/img/stamp/top.png" width="80%" class="gs">
 
-                </div>
-                <div class="ura tc">
-                    <img src="https://www.nejigram.com/assets/img/stamp/023.png" width="80%">
+                    </div>
+                    <div class="ura tc">
+                        <img src="https://www.nejigram.com/assets/img/stamp/023.png" width="80%">
+                    </div>
                 </div>
             </div>
-        <?php if($x && ($x+1) % 5 === 0) :$div_close_flg = true;?></div><?php else :$div_close_flg = false;?><?php endif;?>
         <?php endfor;?>
-        <?php if(!$div_close_flg) :?></div><?php endif;?>
+        </div>
         <p class="tc mt_1"><button class="btn" id="returnbtn_gacha10">return</button></p>
     </div>
 
